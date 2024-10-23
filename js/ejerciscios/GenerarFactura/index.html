@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="container">
+        <form id="facturaForm">
+            <h3>Generar Factura</h3>
+            <label for="producto">Nombre del Producto:</label>
+            <input type="text" id="producto" required>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" min="1" required>
+
+            <label for="precio">Precio Unitario:</label>
+            <input type="number" id="precio" step="500" min="5000" required>
+
+            <label for="descuento">Descuento (%):</label>
+            <input type="number" id="descuento" step="1" min="0" max="50">
+
+            <button type="submit">Generar Factura</button>
+        </form>
+
+        <section id="resultado" class="factura">
+            <!-- Aca mostramos el resultado -->
+        </section>
+    </section>
+    
+    <script type="module" src="./js/Main.js"></script>
+</body>
+</html>
