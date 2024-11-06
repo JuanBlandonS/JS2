@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(0, 200, 255);
+    padding: 10px;
+}
+
+nav h1 {
+    color: #ecf0f1;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+#sobre-nosotros {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+#sobre-nosotros h2 {
+font-size: 2em;
+margin-bottom: 15px;
+color: #2c3e50;
+}
+#sobre-nosotros p {
+font-size: 1.1em;
+line-height: 1.6;
+color: #34495e;
+margin-bottom: 15px;
+}
+#iniciar-sesion {
+max-width: 400px;
+margin: 0 auto;
+padding: 20px;
+text-align: center;
+}
+#iniciar-sesion h2 {
+color: #2c3e50;
+margin-bottom: 20px;
+}
+#iniciar-sesion form {
+display: flex;
+flex-direction: column;
+}
+#iniciar-sesion label {
+margin-top: 10px;
+text-align: left;
+}
+#iniciar-sesion input,
+#iniciar-sesion select {
+padding: 8px;
+margin-top: 5px;
+margin-bottom: 15px;
+border-radius: 4px;
+border: 1px solid #bdc3c7;
+}
+#iniciar-sesion button {
+background-color: #3498db;
+color: #fff;
+border: none;
+padding: 10px;
+border-radius: 4px;
+cursor: pointer;
+}
+#iniciar-sesion button:hover {
+background-color: #2980b9;
+}
+#register-form {
+max-width: 400px;
+margin: 0 auto;
+padding: 20px;
+text-align: center;
+}
+#register-form h2 {
+color: #2c3e50;
+margin-bottom: 20px;
+}
+#register-form form {
+display: flex;
+flex-direction: column;
+}
+#register-form label {
+margin-top: 10px;
+text-align: left;
+}
+#register-form input,
+#register-form select {
+padding: 8px;
+margin-top: 5px;
+margin-bottom: 15px;
+border-radius: 4px;
+border: 1px solid #bdc3c7;
+}
+#register-form button {
+background-color: #3498db;
+color: #fff;
+border: none;
+padding: 10px;
+border-radius: 4px;
+cursor: pointer;
+}
+#register-form button:hover {
+background-color: #2980b9;
+}
+    
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiBanco - Transacciones</title>
+  <link rel="stylesheet" href="./css/banco.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav>
+    <div class="nav-left">
+      <p>MiBanco</p>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container">
+    <h1 class="titulo">Transacciones</h1>
+    
+    <div id="menu-opciones" class="opciones">
+      <button onclick="mostrarSeccion('retirar')">Retirar</button>
+      <button onclick="mostrarSeccion('consignar')">Consignar</button>
+      <button onclick="mostrarSeccion('consultar-movimientos')">Consultar Movimientos</button>
+      <button onclick="mostrarSeccion('consultar-saldo')">Consultar Saldo</button>
+      <button onclick="cerrarSesion()">Salir</button>
+    </div>
+    
+    <!-- Sección Retirar -->
+    <div id="retirar" class="transaccion-seccion" style="display:none;">
+      <h2>Retirar Dinero</h2>
+      <input type="number" id="monto-retirar" placeholder="Monto a retirar">
+      <button onclick="procesarRetiro()">Retirar</button>
+      <p id="mensaje-retirar"></p>
+    </div>
+
+    <!-- Sección Consignar -->
+    <div id="consignar" class="transaccion-seccion" style="display:none;">
+      <h2>Consignar Dinero</h2>
+      <input type="number" id="monto-consignar" placeholder="Monto a consignar">
+      <button onclick="procesarConsignacion()">Consignar</button>
+      <p id="mensaje-consignar"></p>
+    </div>
+
+    <!-- Sección Consultar Movimientos -->
+    <div id="consultar-movimientos" class="transaccion-seccion" style="display:none;">
+      <h2>Consultar Movimientos</h2>
+      <div id="movimientos"></div>
+    </div>
+
+    <!-- Sección Consultar Saldo -->
+    <!-- <div id="consultar-saldo" class="transaccion-seccion" style="display:none;">
+      <h2>Consultar Saldo</h2>
+      <p id="saldo"></p>
+    </div> -->
+  </div>
+
+  <script src="./banco.js"></script>
+</body>
+</html>
