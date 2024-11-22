@@ -1,0 +1,51 @@
+body {
+    background-color: #4c57af;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #333;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    max-width: 500px;
+}
+
+.task-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.task-item.async {
+    background-color: #ffa500;
+    color: white;
+}
+
+.task-item.sync {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.task-item.promise {
+    background-color: #007BFF;
+    color: white;
+}

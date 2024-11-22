@@ -1,0 +1,199 @@
+/* Establecer el fondo negro */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  padding: 20px; /* Agregado para espaciar el contenido en dispositivos pequeños */
+}
+
+/* Título de la página (ahora alineado correctamente) */
+h1 {
+  font-size: 2.5rem;
+  color: #FF9A00;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los temporizadores */
+div {
+  text-align: center;
+}
+
+#time-counter-1, #time-counter-2, #time-counter-3 {
+  font-size: 4rem;
+  font-family: 'Digital-7', sans-serif;
+  color: #FF0000;
+  margin: 10px;
+}
+
+/* Estado del temporizador */
+#state-1, #state-2, #state-3 {
+  font-size: 1.2rem;
+  color: #FF0000;
+  font-weight: bold;
+}
+
+/* Botones */
+button {
+  font-size: 1.2rem;
+  background-color: #FF0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #FF9A00;
+}
+
+button:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+/* Diseño de los iconos */
+button#iniciar {
+  background-color: #00FF00;
+}
+
+button#detener {
+  background-color: #FF0000;
+}
+
+button#reiniciar {
+  background-color: #FFFF00;
+}
+
+/* Ajuste de posición y tamaño del icono de play */
+button#iniciar::before {
+  content: "▶️";
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+button#detener::before {
+  content: "⏸️";
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+button#reiniciar::before {
+  content: "🔄";
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Media Queries para hacer el diseño responsive */
+
+/* Para pantallas pequeñas (móviles) */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem; /* Reducir el tamaño del título en pantallas pequeñas */
+  }
+
+  #time-counter-1, #time-counter-2, #time-counter-3 {
+    font-size: 2.5rem; /* Reducir el tamaño de los temporizadores */
+  }
+
+  #state-1, #state-2, #state-3 {
+    font-size: 1rem; /* Reducir el tamaño de los estados */
+  }
+
+  button {
+    font-size: 1rem; /* Reducir el tamaño de los botones */
+    padding: 8px 16px; /* Reducir el tamaño de los botones */
+    margin: 8px; /* Espaciado más pequeño entre los botones */
+  }
+
+  /* Agrupar los temporizadores en una columna */
+  .temporizadores-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Hacer que los botones se alineen en fila */
+  #buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem; /* Ajuste del tamaño del título */
+  }
+
+  #time-counter-1, #time-counter-2, #time-counter-3 {
+    font-size: 3rem; /* Ajuste del tamaño de los temporizadores */
+  }
+
+  #state-1, #state-2, #state-3 {
+    font-size: 1.1rem; /* Ajuste del tamaño de los estados */
+  }
+
+  button {
+    font-size: 1.1rem; /* Ajuste del tamaño de los botones */
+    padding: 10px 18px; /* Ajuste del tamaño de los botones */
+    margin: 10px; /* Ajuste del espaciado */
+  }
+
+  .temporizadores-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media screen and (min-width: 1025px) {
+  h1 {
+    font-size: 2.5rem; /* Tamaño de título grande para escritorios */
+  }
+
+  #time-counter-1, #time-counter-2, #time-counter-3 {
+    font-size: 4rem; /* Temporizadores grandes */
+  }
+
+  #state-1, #state-2, #state-3 {
+    font-size: 1.2rem; /* Tamaño de texto de estado para escritorios */
+  }
+
+  button {
+    font-size: 1.2rem; /* Botones grandes */
+    padding: 10px 20px;
+    margin: 10px;
+  }
+
+  .temporizadores-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Disposición en línea para escritorios */
+    gap: 20px; /* Espacio entre los temporizadores */
+  }
+
+  #buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

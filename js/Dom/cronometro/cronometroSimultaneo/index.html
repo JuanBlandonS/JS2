@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporizadores Simultáneos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Temporizadores Simultáneos</h1>
+
+  <div class="row">
+       <div class="temporizador-container">
+         <h2>Temporizador 1</h2>
+         <input type="number" id="get-time-1" placeholder="Ingresa los segundos" min="1">
+         <div id="time-counter-1" class="time-counter">00:00</div>
+         <div id="state-1" class="state">Listo para comenzar</div>
+       </div>
+   
+       <div class="temporizador-container">
+         <h2>Temporizador 2</h2>
+         <input type="number" id="get-time-2" placeholder="Ingresa los segundos" min="1">
+         <div id="time-counter-2" class="time-counter">00:00</div>
+         <div id="state-2" class="state">Listo para comenzar</div>
+       </div>
+   
+       <div class="temporizador-container">
+         <h2>Temporizador 3</h2>
+         <input type="number" id="get-time-3" placeholder="Ingresa los segundos" min="1">
+         <div id="time-counter-3" class="time-counter">00:00</div>
+         <div id="state-3" class="state">Listo para comenzar</div>
+       </div>
+   </div>
+
+  <div id="buttons-container">
+    <button id="iniciar">Iniciar</button>
+    <button id="detener" disabled>Detener</button>
+    <button id="reiniciar" disabled>Reiniciar</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

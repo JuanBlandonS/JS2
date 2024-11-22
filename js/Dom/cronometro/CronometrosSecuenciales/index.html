@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporizadores en Secuencia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div>
+    <h1>Temporizadores en Secuencia</h1>
+    <input type="number" id="get-time" placeholder="Ingresa los segundos" min="1">
+    <div id="time-counter-1">00:00</div>
+    <div id="state-1">Listo para comenzar</div>
+  </div>
+
+  <div>
+    <div id="time-counter-2">00:00</div>
+    <div id="state-2">Esperando para comenzar</div>
+  </div>
+
+  <div>
+    <button id="iniciar">Iniciar</button>
+    <button id="detener" disabled>Detener</button>
+    <button id="reiniciar" disabled>Reiniciar</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
